@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<h2 style="text-align: center; color: rgb(28, 73, 1);">Анкета для моделей</h2>
+<body>
+    
+    <br />
+    <section class="container">
+        <form action="#" method="post" enctype="multipart/form-data">
+        <P>Имя</P>
+        <input tabindex="1" type="text" placeholder="Введите имя" name="username">
+        <P>Фамилия</P>
+        <input type="text" placeholder="Введите фамилию" name="usersurname">
+        <p>Пол</p>
+        <div>
+        <input type="radio" name="gender" value="male"> Мужской
+        <input type="radio" name="gender" value="female"> Женский
+        </div>
+        <p>Возраст</p>
+        <select tabindex="4" name="color">
+            <option selected value="one">18</option>
+            <option value="two">19</option>
+            <option value="three">20</option>
+            <option value="four">21</option>
+            <option value="five">22</option>
+            <option value="six">23</option>
+            <option value="seven">24</option>
+            <option value="eight">25</option>
+        </select>
+        <p>Bec</p>
+        <select tabindex="4" name="color">
+            <option selected value="one1">48</option>
+            <option value="two1">49</option>
+            <option value="three1">50</option>
+            <option value="four1">51</option>
+            <option value="five1">52</option>
+            <option value="six1">53</option>
+            <option value="seven1">54</option>
+            <option value="eight1">55</option>
+        </select>
+        <p>Размер одежды</p>
+        <input type="checkbox" name="od1" value="yes"> XS 
+        <input type="checkbox" name="od2" value="no"> S
+        <input type="checkbox" name="od3" value="yes"> M
+        <p>Размер обуви</p>
+        <input type="checkbox" name="ob1" value="yes"> 38 
+        <input type="checkbox" name="ob2" value="no"> 39
+        <input type="checkbox" name="ob3" value="yes"> 40
+        <p>Адрес</p>
+        <textarea placeholder="Напишите домашний адрес (улица, дом, кваритира)" name="" id="#" cols="30" rows="3"></textarea>
+        <P>Телефон</P>
+        <input tabindex="3" type="tel" placeholder="+7**" name="phonenumber">
+        <P>Придумайте пароль</P>
+        <input tabindex="2" type="password" placeholder="Введите пароль" name="pass">
+        <P>Почта</P>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <br />
+        <p>Прикрепите фото</p>
+        <input type="file">
+        <br />
+        <br />
+        <br />
+        <input
+        type="submit"
+        value="Отправить"
+        class="submit-button"
+        onclick="showFormData(event)"
+      />
+      <input type="reset" value="Сбросить" class="reset-button" />
+    </form>
+    <div id="output"></div>
+    <script src="1.js"></script>
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+</html>
